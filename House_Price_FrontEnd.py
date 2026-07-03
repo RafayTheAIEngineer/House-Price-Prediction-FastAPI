@@ -1,6 +1,8 @@
 import streamlit as st 
 import requests 
 
+st.set_page_config(page_title="AI-House-Estimator", page_icon="🏢", layout="wide")
+
 # styling and title of UI
 st.title('🏠House Price Prediction App')
 st.write("Enter your california home's features and find out the price.")
@@ -39,7 +41,7 @@ if st.button('Predict Price🚀'):
     }
 
     try:
-        response = requests.post('http://127.0.0.1:8000/predict', json=data)
+        response = requests.post('https://house-price-prediction-fastapi-ndmd.onrender.com/predict', json=data)
         
         if response.status_code == 200 :
             result = response.json()
