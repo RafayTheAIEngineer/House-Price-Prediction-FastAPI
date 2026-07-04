@@ -3,8 +3,12 @@ import requests
 
 st.set_page_config(page_title="AI-House-Estimator", page_icon="🏢", layout="wide")
 
+# sidebar setup
+st.sidebar.title('🏠House Price Prediction App')
+st.sidebar.write('Enter Your House Features and find out the price')
+
 # styling and title of UI
-st.title('🏠House Price Prediction App')
+st.title('🏠House Price Prediction')
 st.write("Enter your california home's features and find out the price.")
 
 st.markdown('---')
