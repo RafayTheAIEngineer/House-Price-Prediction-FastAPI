@@ -6,6 +6,7 @@ st.set_page_config(page_title="AI-House-Estimator", page_icon="🏢", layout="wi
 # sidebar setup
 st.sidebar.title('🏠House Price Prediction App')
 st.sidebar.write('Enter Your House Features and find out the price')
+st.sidebar.info('FastAPI Backend + Streamlit Frontend')
 
 # styling and title of UI
 st.title('🏠House Price Prediction')
